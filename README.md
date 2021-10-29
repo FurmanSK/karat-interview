@@ -1,6 +1,12 @@
 This is my interview question from Karat.io. Bombed it. But was determined to finish it so I did and uploaded to my github.
 I didn't build it with TDD yet but that will be the next steps if I want to push more. But I do run all 4 test cases given and produces correct output. Their question and requirements don't state it needs to be ordered output so each time I run mine using sets, so as to not have duplicates, it won't always be in the order they state below. I might try testing which is faster, using sets or just testing if NAME is in a list and compare.
 
+UPDATE
+
+I added the list method too and compare and they are running at about the same speed. Although sometimes I would get 0.0 as running time which I'm not sure how that is unless it caches stuff maybe? 
+
+****
+
 We are working on a security system for a badged-access room in our company's building.
 
 Given an ordered list of employees who used their badge to enter or exit the room, write a function that returns two collections:
