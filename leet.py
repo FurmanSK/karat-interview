@@ -1,6 +1,6 @@
 # My attempt at the coding test for indeed.
 # See README.md for the requirements and test cases.
-def func(badge_records: list) -> tuple[set, set]:
+def func(badge_records: list) -> tuple[list, list]:
 
     # hash table
     ds = {}
@@ -34,7 +34,7 @@ def func(badge_records: list) -> tuple[set, set]:
         if ds[p][0]:
             first.add(p)
 
-    return first, second
+    return list(first), list(second)
     
     
 
@@ -61,7 +61,19 @@ badge_records_1 = [
   ["Paul",     "exit"] 
 ]
 
-badge_records = [
+badge_records_2 = [
+  ["Paul", "enter"],
+  ["Paul", "exit"],
+]
+
+badge_records_3 = [
+  ["Paul", "enter"],
+  ["Paul", "enter"],
+  ["Paul", "exit"],
+  ["Paul", "exit"],
+]
+
+badge_records_4 = [
   ["Paul", "enter"],
   ["Paul", "exit"],
   ["Paul", "exit"],
@@ -69,3 +81,6 @@ badge_records = [
 ]
 
 print(func(badge_records_1))
+print(func(badge_records_2))
+print(func(badge_records_3))
+print(func(badge_records_4))
